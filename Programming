@@ -2,6 +2,64 @@
 
 ## Data Types
 
-Data Type = is defined by the values it can take or the operations which can be performed on it.
+### Data Type = is defined by the values it can take or the operations which can be performed on it.
 
-It is possible to store one piece of data using various data types - must decide which is best suited.
+It is possible to store one piece of data using various data types - must decide which is best suited. i.e. Age can be str or int.
+
+      - Integer = 6, -1, 0
+      - Float = 34.53453 , -3242.234234
+      - Boolean = True / False
+      - Character = 'm'
+      - String = 'hello world'
+      - Date / Time = Available in all most all languages to assist with the storing of dates and times.
+      - Pointer / Reference = Declare a variable that can be used to 'point' to a physical address in memory.
+      - Records = Composed of related data of various other data types. It is divied into names fields. Think of a record as a row from a table.
+      - Arrays = (Same as lists for Python) ['Dave', 'John', 'William']
+
+### User-defined Data Types
+
+Built-in data types are useful, but often limiting. Languages allow you to construct your own complex user-defined data types.
+
+## Programming Concepts
+
+      - Variable declaration = Creating a variable for the first time, giving it a name (and sometimes a data type).
+                               This alllocates a portion of computer memory to the variable.
+      - Constant declaration = Same as variable declaration, but this value is constant i.e. won't change when program is running.
+      
+      - Assignment           = Giving a constant a variable or a value.
+      - Iteration            = Repeating an instruction (can be definite or indefinite.
+      - Selection            = Comparing values and then choosing an action based on those values.
+      - Subroutine           = A named block of code containing a set of instructions designed to perform a frequently used operation.
+      
+### Definite and indefinite iteration
+
+Process of repeating a block of code. Examples of this are for and while loops.
+
+      - Definite             =  Type of iteration in which the number of repetitions required is known before the loop starts.
+      - Indefinite           =  Type of iteration in which the number of repetitions required is not known before the loop starts.
+
+'''for i in range(60):
+  print(i)
+'''
+'''a = 1
+
+while a == 1:
+    b = input("Enter your name\n")
+    print('Hi, ', b, 'This is an infinite loop!!')
+'''
+### Nested Structures
+
+Selection strucutures and iteration structures can be nested. i.e. one strucutre is placed within another structure - easily identified by indentation (easier for humans to read)
+
+'''for i in range(10):
+    if i < 5:
+        print('Hello numbers <5')
+    else:
+        if i == 6:
+            print('6 is boring :(')
+        else:
+            print('bigger numbers are cool')
+'''
+
+
+      
