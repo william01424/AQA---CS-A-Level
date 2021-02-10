@@ -61,5 +61,78 @@ Selection strucutures and iteration structures can be nested. i.e. one strucutre
             print('bigger numbers are cool')
 '''
 
+## Arithmetic Operations
 
+       - Addition = 2 + 2 
+       - Subtraction = 4 - 2
+       - Multiplication = 4 * 2
+       - Float Division = 8 / 4
+       - Integer Division = 12 \ 8 or 12 DIV 8
+       - Modulo (remainder) = 12 % 8
+       - Exponentiation = 2**6
+       - Rounding = "{0:.2sf}".format(float_number)
+       - Truncation = removing all numbers after the decimal point (do not round)
       
+ ## Relational Operations
+ 
+       - Equal to: 12 = 12
+       - Not equal to: 16 != 23
+       - Less than: 3 < 5
+       - Greater than: 5 > 3
+       - Less than or equal to: x <= 5
+       - Greater than or equal to: x >= 5
+
+## Boolean Operations
+
+### A Boolean data type is one whose value can only ever be true or false (1 or 0)
+
+      NOT - Opposite of a Boolean value i.e. NOT 1 = 0
+      AND - The product of 2 Boolean values i.e. 1 AND 1 = 1 ... 0 AND 1 = 0
+      OR  - The sum of 2 Boolean values i.e. 1 OR 0 = 1 ... 1 OR 1 = 1 (= 2 but cant have 'more' true with this logic)
+      XOR - True if strictly one of two values is true i.e. 1 XOR 1 = 0 ... 1 XOR 0 = 1
+    
+## Constants and Variables
+
+Constants are useful if a value is required multiple times through code - it only has to be updated once.
+They also make code easier to understand as we assign a name to a particular constant rather than just doing random stuff with an unnamed number throughout code.
+
+## String-handling Operations
+
+A string is a collecetion of characters - they have various functions applied to them
+
+      - Length = Returns the number of characters within a specified string.
+      - Position = Returns the position of a specified character within a string. 
+      - Substring = Given a starting position and a length, returns a portion of a string.
+            IAM is a substring of WILLIAM starting with position 4 and of length 3!
+      - Concatenation = Joining two or more strings together, forming a new, longer string. 
+      - Character to character code = Returning the character code which corresponds to a specified character.
+      - Character code to character = Returning the character represented by a given character code.
+      - String to integer and vice versa.
+      - String to float and vice versa.
+      - Date / time to string and vice versa.
+ 
+ ## Random Numbers
+ 
+ High-level programming languages have the ability to generate random numbers - in python you can import random then do random.random()
+ 
+'''
+import random
+
+for i in range(10):
+    if i < 10:
+        print(random.random())
+print()
+'''
+
+## Exception Handling
+
+When error occurs in program an 'exception' is thrown - caused by i.e. wrong data type, divide by zero, non-existent variable etc.
+
+If exception has been thrown, the computer has to handle the exception to avoid crashing -- the following occurs:
+      - Pausing execution
+      - Saving the current volatile state of the program on the system stack
+      - Running a section of code called a catch block
+            This code will prevent the program from crashing and may inform the user of the error.
+            
+Once error has been handled, the program uses the system stack to restore its pervious state before resuming execution.
+
