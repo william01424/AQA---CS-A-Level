@@ -186,7 +186,7 @@ When this nesting occurs, each subroutine call will be 'pushed' onto the compute
 When the nested subroutine finishes executing, the stack frame is 'popped' from the call stack - the computer uses the information to return to execution 
 of the previous subroutine.
 
-PLEASE SEE EXAMPLE VIDEO FOR FULL EXPLANATION OF CELL STACK AND POPPING.
+PLEASE SEE EXAMPLE VIDEO FOR FULL EXPLANATION OF CALL STACK AND POPPING.
 
 ## Recursive Techniques
 
