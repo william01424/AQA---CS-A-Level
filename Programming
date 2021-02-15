@@ -170,9 +170,43 @@ Global variables can be accessed from any part of a program - exist in memory fo
 
 They can both be given the same identifier but this is bad practise - if local varialbe is changed, the global will remain the same.
 
+## Stack frames in subroutine calls
 
+Used to store:
+
+      - return addresses
+      - parameters
+      - local variables
+
+for each subroutine call that occurs during program execution.
+
+Nesting = A subroutine calls another.
+
+When this nesting occurs, each subroutine call will be 'pushed' onto the computer's call stack in the form of a stack frame (before code is executed).
+When the nested subroutine finishes executing, the stack frame is 'popped' from the call stack - the computer uses the information to return to execution 
+of the previous subroutine.
+
+PLEASE SEE EXAMPLE VIDEO FOR FULL EXPLANATION OF CELL STACK AND POPPING.
+
+## Recursive Techniques
+
+A recursive subroutine is one which is defined in terms of iteself. 
+i.e. somewhere in the recursive subroutine, there is a call to the subroutine itself.
+
+Recursive subroutines must have a stopping condition (aka base case) - this must be met at some point in the execution of the program.
+      - If an algorithm calls itself but doesn't have a base case, it will never terminate, causing a stack overflow as more and more stack frames are 
+        pushed onto the call stack. 
       
-
-
+See pseudocode example:
+      SUBROUTINE Factorial(value)
+            IF value = 0 THEN             <------ BAES CASE IS WHEN value = 0 ; In this case algorithm doesn't use recursion to return result.
+                  RETURN 1
+            ELSE
+                  RETURN value * Factorial(value - 1)
+            ENDIF
+      ENDSUBROUTINE
+          
+When a problem can be solved using recursion, it can also be solved using iteration.
+      Iterative solutions are easier to program while recursive solutions can be more compact in code.
 
 
